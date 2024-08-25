@@ -1,0 +1,567 @@
+@charset "utf-8";
+/*нужное*/
+
+.img_cover {
+    object-fit: cover; /* Масштабирование изображения так, чтобы оно полностью покрывало блок */
+}
+
+.cover-photo,
+.img_cover{
+    position: relative;
+    width: 100%;
+    height: 185.4px; /* Выберите подходящую высоту для обложки */
+    background-size: cover;
+    background-position: 250px;
+    margin-bottom: 20px; /* Регулируйте отступ, как требуется */
+}
+
+
+.postChart{
+    width: 625px;
+    height: 625px;
+}
+.edit-cover {
+    position: absolute;
+    top: 140px;
+    right: 10px;
+    background-color: #9d9d9d; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-avatarrr{
+    position: absolute;
+    left: 490px;
+    background-color: #9d9d9d; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* #imgPreview {
+    position:absolute;
+    top:0;
+    width: 100%;
+    height: 195px;
+    background-image: url('../img/обои2.jpg');
+    background-size: cover;
+    background-position: 250px;
+    margin-bottom: 20px;
+}  */
+
+.user-info {
+    position: relative;
+    left: 20px; /* Устанавливаем слева с краю */
+    display: flex;
+    align-items: center;
+    width: 450px; /* Размер аватарки */
+    height: 500px; /* Размер аватарки */
+    background-color: rgb(192, 192, 192);
+    border-radius: 30px;
+    justify-content: center;
+
+}
+.information {
+    position: absolute;
+    display: flex;
+    top: 225px; /* Регулируем отступ сверху */
+    padding-top: 5px;
+    padding-block: 5px;
+    color: white;
+    text-align: center;
+    font-size: 12px; /* Размер шрифта никнейма */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    flex-direction: row;
+
+}
+.information h4 {
+    margin: 0 40px 0 40px;
+}
+.user-info img {
+    object-fit: cover;
+    position: absolute;
+
+    top: -90px; /* Регулируем отступ сверху */
+    left: 100px;
+    width: 250px; /* Размер аватарки */
+    height: 250px; /* Размер аватарки */
+    border-radius: 50%; /* Делаем аватарку круглой */
+    margin-right: 10px; /* Отступ между аватаркой и текстом */
+}
+
+.user-info h2 {
+    position: absolute;
+    width: 100%;
+    margin: 0; /* Убираем отступы */
+    top: 180px; /* Регулируем отступ сверху */
+    padding-top: 5px;
+    padding-block: 5px;
+    background-color: rgba(84, 84, 84, 0.37);
+    color: white;
+    text-align: center;
+    font-size: 18px; /* Размер шрифта никнейма */
+}
+.user-info .date {
+    position: absolute;
+    margin: 0; /* Убираем отступы */
+    top: 330px; /* Регулируем отступ сверху */
+    padding-top: 5px;
+    padding-block: 5px;
+    color: white;
+    text-align: center;
+    font-size: 10px; /* Размер шрифта никнейма */
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.edit-profile,
+.subscription,
+.unsubscription{
+    position: absolute;
+    top: 300px;
+    background-color: #666;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px; /* Размеры кнопки редактирования */
+    cursor: pointer;
+}
+
+.buttons {
+    position: absolute;
+    top: 300px;
+    left: 450px;
+    border: none;
+    cursor: pointer;
+    width: 1000px;
+}
+
+.buttons button,
+.created button,
+.saveButton{
+    background-color: #666;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px; /* Размеры кнопки редактирования */
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.buttons a{
+    background-color: #666;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px; /* Размеры кнопки редактирования */
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.content{
+    position: absolute;
+    top: 350px;
+    left: 490px;
+    width: 1025px; /* Размер аватарки */
+
+    border-radius: 30px;
+    background-color: rgba(168, 168, 168, 0.42);
+    padding-block-end: 70px;
+
+}
+
+.created{
+    margin-left: 3%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {height: 100%}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(210, 207, 202, 0.432);
+    color: black;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 1em;
+    line-height: 135%;
+}
+
+a{
+    color:#696969;
+    text-decoration: none;
+    margin-right: 3%;
+}
+
+a:hover {
+    color: rgba(255, 0, 106, 0.71);
+}
+
+a,a:hover{
+    -webkit-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    transition: all.6s ease;
+}
+
+input{
+    width: 30%;
+    height: 10%;
+    font-size: 1em;
+}
+
+button{
+    font-size: 1em;
+}
+
+.clear{
+    clear:both;
+}
+
+/*Стили для шапки*/
+
+header{
+    margin: 0;
+    width: 98%;
+    height: 8%;
+    float: left;
+    padding: 1%;
+    background-color: #c7c7c7;
+    border-bottom: 2px solid silver;
+    box-shadow: 0px 5px 5px rgba(72, 72, 72, 0.314);
+}
+
+header #logo {
+    width: 10%;
+    float: left;
+}
+
+header #menuHead {
+    margin-right: auto;
+    width: 40%;
+    float: left;
+}
+
+header #search {
+    width: 40%;
+    float: right;
+}
+
+header #regAuth {
+    transform: translate(0, -85%);
+    width: 10%;
+    float: right;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #b0b0b0;
+}
+
+/*Стили для подвала*/
+
+footer{
+    width: 98%;
+    float: left;
+    padding: 1%;
+    position: fixed !important;
+    background-color: #c7c7c7;
+    box-shadow: 0px -5px 5px rgba(72, 72, 72, 0.314);
+}
+
+footer p{
+    text-align: right;
+    float: right;
+    width: 50%;
+}
+
+
+footer img{
+    width: 20px;
+}
+
+/*стили для страниц редактирования*/
+.sidebar{
+    background-color: #a8a8a8;
+    min-height: 600px;
+}
+
+.sidebar ul a{
+    padding: 18px;
+    display: block;
+    border-bottom: 1px solid #fff;
+}
+
+.sidebar ul a:hover{
+    padding-left: 18px;
+    transition: all 0.3s;
+    color: #d3d3d3;
+    text-decoration: none;
+}
+
+.title-table {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.row {
+    border-bottom: 1px solid #ddd;
+}
+
+.row h2{
+    border-bottom: 1px solid #ddd;
+    margin-left: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.sidebar {
+    width: 15%;
+
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.sidebar a:hover {
+    color: #ff0000;
+}
+
+.posts {
+    width: 85%;
+    padding-left: 14px;
+    box-sizing: border-box;
+}
+
+#posts {
+    margin-left: 25px !important;
+}
+
+.title-table {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+.row {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.id,
+.title,
+.author,
+.del,
+.red,
+.login,
+.button-row
+{
+    text-align: center;
+}
+
+.edit{
+    text-align: right;
+}
+.block,
+.unblock{
+    text-align: left;
+}
+
+
+.col-1,
+.col-2,
+.col-5 {
+    width: 20%;
+    float: left;
+}
+.col-3 {
+    width: 12%;
+    float: left;
+}
+
+.col-4 {
+    width: 28%;
+    float: left;
+}
+
+.del a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.block a,
+.unblock a{
+    color: #747474;
+    text-decoration: none;
+}
+
+.edit a {
+    color: #00a6ff;
+    text-decoration: none;
+}
+
+.edit a:hover,
+.block a:hover,
+.del a:hover {
+    text-decoration: underline;
+}
+
+.button-row {
+    display: flex;
+}
+
+h2{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.button-row a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 3px;
+    transition: background-color 1s;
+}
+
+.button-row a:hover {
+    background-color: #bebebe;
+}
+
+/**/
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control,
+textarea,
+#myDropdown {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-cover{
+    width: 30%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.editor-container {
+    width: 500px; /* Задайте фиксированную ширину по вашему выбору */
+    overflow: auto;
+    resize: none; /* Запретить изменение размеров */
+}
+
+/*стили для вывода сообщений о добавлении в бд*/
+.error{
+    color: rgb(175, 24, 24);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.success{
+    color: rgb(16, 185, 35);
+    font-style:oblique;
+    font-weight: bold;
+}
+
+/*стили для чекбокса*/
+.form-check-input {
+    width: 20px;
+    margin-left: 0px;
+    vertical-align: middle; /* Align checkbox with the label vertically */
+}
+
+.form-check-label {
+    display: inline-block;
+    font-size: 1em;
+    vertical-align: middle; /* Align label with the checkbox vertically */
+}
+
+/* Style the checkbox when checked */
+.form-check-input:checked + .form-check-label {
+    color: #008000; /* Change color when checked */
+    font-weight: bold;
+}
+
+/* Add a hover effect */
+.form-check-label:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Стили для каждого подписчика */
+.follower, .subscriber {
+    position: relative; /* Измените позиционирование на relative */
+    margin-left: 30px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.clear {
+    clear: both;
+}
+
+.follower li,
+.subscriber li{
+    margin: 10px;
+}
+
+.follower a,
+.subscriber a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.follower a:hover,
+.subscriber a:hover{
+    color: #866c83; /* Цвет при наведении курсора */
+}
+
+.avatar-photo button img{
+    position: absolute;
+    top: 105px;
+    left: 270px;
+    z-index: 1;
+    max-width: 60px;
+    max-height: 60px;
+}
+
+#imgPreview_avatar{
+    object-fit: cover;
+}

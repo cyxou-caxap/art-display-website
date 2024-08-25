@@ -1,0 +1,382 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {height: 100%}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(210, 207, 202, 0.432);
+    color: black;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 1em;
+    line-height: 135%;
+}
+
+a{
+    color:#696969;
+    text-decoration: none;
+    margin-right: 3%;
+}
+
+a:hover {
+    color: rgba(255, 0, 106, 0.71);
+}
+
+a,a:hover{
+    -webkit-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    transition: all.6s ease;
+}
+
+input{
+    width: 30%;
+    height: 10%;
+    font-size: 1em;
+}
+
+button{
+    font-size: 1em;
+}
+
+.clear{
+    clear:both;
+}
+
+/*Стили для шапки*/
+
+header{
+    z-index: 1;
+    margin: 0;
+    width: 98%;
+    height: 8%;
+    float: left;
+    padding: 1%;
+    background-color: #c7c7c7;
+    border-bottom: 2px solid silver;
+    box-shadow: 0px 5px 5px rgba(72, 72, 72, 0.314);
+}
+
+header #logo {
+    width: 10%;
+    float: left;
+}
+
+header #menuHead {
+    margin-right: auto;
+    width: 40%;
+    float: left;
+}
+
+header #search {
+    width: 40%;
+    float: right;
+}
+
+header #regAuth {
+    transform: translate(0%, -85%);
+    width: 10%;
+    float: right;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #b0b0b0;
+}
+
+/*Стили для подвала*/
+footer a{
+    color:#696969;
+    text-decoration: none;
+    margin-right: 30px;
+}
+footer img{
+    margin-right: 5px;
+}
+footer {
+    display: flex;
+    margin-top: auto;
+}
+footer{
+    width: 98%;
+    float: left;
+    padding: 1%;
+    background-color: #c7c7c7;
+    box-shadow: 0px -5px 5px rgba(72, 72, 72, 0.314);
+}
+
+footer p{
+    text-align: right;
+    float: right;
+    width: 50%;
+}
+
+
+footer img{
+    width: 20px;
+}
+
+/*стили для страниц редактирования*/
+.sidebar{
+    background-color: #a8a8a8;
+    min-height: 600px;
+}
+
+.sidebar ul a{
+    padding: 18px;
+    display: block;
+    border-bottom: 1px solid #fff;
+}
+
+.sidebar ul a:hover{
+    padding-left: 18px;
+    transition: all 0.3s;
+    color: #d3d3d3;
+    text-decoration: none;
+}
+
+.title-table {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.row {
+    border-bottom: 1px solid #ddd;
+}
+
+.row {
+    display: flex;
+}
+
+.sidebar {
+    width: 15%;
+
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.sidebar a:hover {
+    color: #ff0000;
+}
+
+.posts {
+    width: 85%;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.title-table {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+.row {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.id,
+.title,
+.author,
+.del,
+.red,
+.login,
+.button-row
+ {
+    text-align: center;
+}
+
+.edit{
+    text-align: right;
+}
+.block,
+.unblock{
+    text-align: left;
+}
+
+
+.col-1,
+.col-2,
+.col-5 {
+    width: 20%;
+    float: left;
+}
+
+.col-4 {
+    width: 40%;
+    float: left;
+}
+
+.col-9 {
+    width: 75%;
+    float: left;
+}
+
+.del a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.block a,
+.unblock a{
+    color: #747474;
+    text-decoration: none;
+}
+
+.edit a {
+    color: #00a6ff;
+    text-decoration: none;
+}
+
+.edit a:hover,
+.block a:hover,
+.del a:hover {
+    text-decoration: underline;
+}
+
+.button-row {
+    display: flex;
+}
+
+h2{
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.button-row a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 3px;
+    transition: background-color 1s;
+}
+
+.button-row a:hover {
+    background-color: #bebebe;
+}
+
+/**/
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control,
+textarea,
+#myDropdown {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.editor-container {
+    width: 500px; /* Задайте фиксированную ширину по вашему выбору */
+    overflow: auto;
+    resize: none; /* Запретить изменение размеров */
+}
+
+/*стили для вывода сообщений о добавлении в бд*/
+.error{
+    color: rgb(175, 24, 24);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.success{
+    color: rgb(16, 185, 35);
+    font-style:oblique;
+    font-weight: bold;
+}
+
+/*стили для чекбокса*/
+.form-check-input {
+    width: 20px;
+    margin-left: 0px;
+    vertical-align: middle; /* Align checkbox with the label vertically */
+}
+
+.form-check-label {
+    display: inline-block;
+    font-size: 1em;
+    vertical-align: middle; /* Align label with the checkbox vertically */
+}
+
+/* Style the checkbox when checked */
+.form-check-input:checked + .form-check-label {
+    color: #008000; /* Change color when checked */
+    font-weight: bold;
+}
+
+/* Add a hover effect */
+.form-check-label:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/**/
+
+
+.admin-link {
+    color: #696969;
+    text-decoration: none;
+    margin-right: 3%;
+    position: relative;
+}
+
+.admin-link:hover {
+    color: rgba(255, 0, 106, 0.71);
+}
+
+.admin-dropdown {
+    position: absolute;
+    top: 100%;
+    width: 80%;
+    right: 0;
+    background-color: #c9c9c9;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(128, 128, 128, 10); /* Светлая тень внизу */
+    z-index: 1;
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.admin-dropdown li {
+    padding: 10px;
+    text-align: right;
+}
+
+.admin-panel:hover .admin-dropdown {
+    display: block;
+}
